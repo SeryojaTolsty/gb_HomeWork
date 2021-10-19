@@ -14,9 +14,7 @@ public class HomeWork2 {
 
     public static boolean twoInt(int a, int b) {
         int sum = a + b;
-        if(sum >= 10) {
-            return true;
-        } else if (sum < 20) {
+        if(sum >= 10 && sum <= 20) {
             return true;
         } else {
             return false;
