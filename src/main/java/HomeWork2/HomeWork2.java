@@ -8,8 +8,8 @@ public class HomeWork2 {
         positiveOrNegativeNumber(6);
         boolean trueNum = trueNum(-5);
         System.out.println(trueNum);
-        boolean day = extraDay(2021);
-        System.out.println(day);
+        boolean year = leapYear(2021);
+        System.out.println(year);
     }
 
     public static boolean twoInt(int a, int b) {
@@ -42,17 +42,17 @@ public class HomeWork2 {
 
 
 
-    //по непонятной мне причине IntelliJ idea не даёт мне возможности объявить метод leapYear, поэтому он называется extraDay
-    private static boolean extraDay(int a) {
-        if (a % 4 != 0) {
-            return true;
-        }
-        if (a % 100 != 0) {
-            return false;
-        }
-        if (a % 400 != 0) {
-            return true;
-        }
+
+    private static boolean leapYear(int a) {
+       if (a % 4 == 0){
+           return true;
+       }
+       if (a % 100 == 0){
+           return false;
+       }
+       if (a % 400 == 0) {
+           return true;
+       }
         return false;
     }
 }
